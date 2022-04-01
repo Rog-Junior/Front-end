@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <!-- Scripts fundamentais para a criação e funcionamento de um arquivo react -->
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+    <!-- Para que seja aceito HTML no script , lembrando que deve-se ser incluso o "type='text/babel'" para que funcione -->
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+    <script type="text/babel">
+        const app = document.getElementById("app");
+        const nome = "{cleber}"
+        // window.alert("Seja bem vindo a minha area de desenvolvimento pessoal!!!")
+
+        ReactDOM.render(<h1>Teste de variavel: {nome}, lembrando que para inserir variaveis, deve-se sempre acrescentar o valor da variavel entre chaves.</h1>, app); // Sera renderizado no DOM essa informação
+    </script>
+</body>
+</html>
